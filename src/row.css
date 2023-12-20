@@ -1,0 +1,38 @@
+.row{
+    margin-left:20px;
+    color:white
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.row_container{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    min-height: 120px; /* Adjust the minimum height as needed */
+
+}
+
+.row_image{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right:10px;
+    transition: transform 450ms;
+}
+
+.row_image:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.row_large{
+    max-height: 250px;
+}
+.row_large:hover{
+    transform: scale(1.08);
+}
+.row_container::-webkit-scrollbar{
+    display: none;
+}
